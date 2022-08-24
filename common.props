@@ -1,0 +1,9 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Version>0.0.1</Version>
+    <ImplicitUsings>enable</ImplicitUsings>
+	<RootNamespace>WeData.QuestionFlow</RootNamespace>
+    <NoWarn>$(NoWarn);CS1591;CS0436</NoWarn>
+  </PropertyGroup>
+</Project>
