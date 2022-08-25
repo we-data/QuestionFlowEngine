@@ -7,7 +7,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{00D5EE3E-4FE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{826A27E2-545B-4939-8968-93D0729AC9B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeData.QuestionFlow.Engine", "src\WeData.QuestionFlow.Engine\WeData.QuestionFlow.Engine.csproj", "{085FABA0-22EB-4399-BEE1-0420F84F4B85}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeData.QuestionFlow.Engine", "src\WeData.QuestionFlow.Engine\WeData.QuestionFlow.Engine.csproj", "{085FABA0-22EB-4399-BEE1-0420F84F4B85}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeData.QuestionFlow.Engine.Tests", "test\Engine.Tests\WeData.QuestionFlow.Engine.Tests.csproj", "{450D69D6-440D-4C2C-85A8-24869F0658A5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,12 +21,17 @@ Global
 		{085FABA0-22EB-4399-BEE1-0420F84F4B85}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{085FABA0-22EB-4399-BEE1-0420F84F4B85}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{085FABA0-22EB-4399-BEE1-0420F84F4B85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{450D69D6-440D-4C2C-85A8-24869F0658A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{450D69D6-440D-4C2C-85A8-24869F0658A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{450D69D6-440D-4C2C-85A8-24869F0658A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{450D69D6-440D-4C2C-85A8-24869F0658A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{085FABA0-22EB-4399-BEE1-0420F84F4B85} = {00D5EE3E-4FED-45B1-86F7-94C04838A4CC}
+		{450D69D6-440D-4C2C-85A8-24869F0658A5} = {826A27E2-545B-4939-8968-93D0729AC9B4}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3D4C83CA-C4F2-43E0-BAE9-B4530298A5BE}
