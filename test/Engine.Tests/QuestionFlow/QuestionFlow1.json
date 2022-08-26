@@ -1,0 +1,21 @@
+{
+  "QuestionFlowName": "Sample1",
+  "Rules": [
+    {
+      "RuleName": "Question1",
+      "QuestionId": "Q1",
+      "Actions": [
+        {
+          "OptionNumber": 1,
+          "Type": "Next",
+          "FollowQuestionId": "Q2"
+        },
+        {
+          "OptionNumber": 2,
+          "Type": "Next",
+          "FollowQuestionId": "Q4"
+        }
+      ]
+    }
+  ]
+}

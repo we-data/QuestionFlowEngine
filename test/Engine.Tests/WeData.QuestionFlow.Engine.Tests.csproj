@@ -24,4 +24,10 @@
 		<ProjectReference Include="..\..\src\WeData.QuestionFlow.Engine\WeData.QuestionFlow.Engine.csproj" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <None Update="QuestionFlow\QuestionFlow1.json">
+	    <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
 </Project>

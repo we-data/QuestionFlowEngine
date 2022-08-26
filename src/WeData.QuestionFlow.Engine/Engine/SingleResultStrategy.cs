@@ -16,7 +16,7 @@ public class SingleResultStrategy : QuestionStrategy
         while (action != null)
         {
             lastAction = action;
-            if (action.Type == QuestionActionType.Continue)
+            if (action.Type == QuestionActionType.Next)
             {
                 action = GetAction(action.FollowQuestionId);
             }

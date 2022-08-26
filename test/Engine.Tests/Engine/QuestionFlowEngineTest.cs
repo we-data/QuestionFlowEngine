@@ -40,7 +40,7 @@ namespace WeData.QuestionFlow.Engine
             var questionFlow = CreateQuestionFlowEngine();
 
             var result = await questionFlow.ExecuteAsync(QUESTIONFLOW_NAME, questionAnswers);
-            Assert.True(result.Type == QuestionActionType.Continue);
+            Assert.True(result.Type == QuestionActionType.Next);
             //Question 2: 73fbba56-4a1a-49ab-b63b-a37675a0ef30
             var act = result.Actions.Where(action => action.FollowQuestionId == "73fbba56-4a1a-49ab-b63b-a37675a0ef30");
             Assert.Single(act);
@@ -55,7 +55,7 @@ namespace WeData.QuestionFlow.Engine
             var questionFlow = CreateQuestionFlowEngine();
 
             var result = await questionFlow.ExecuteAsync(QUESTIONFLOW_NAME, questionAnswers);
-            Assert.True(result.Type == QuestionActionType.Continue);
+            Assert.True(result.Type == QuestionActionType.Next);
             Assert.Single(result.Actions.Select(action => action.FollowQuestionId == "0dd1464a-ee89-4b5c-9ea3-d42f84b48774"));
         }
 
@@ -68,7 +68,7 @@ namespace WeData.QuestionFlow.Engine
 
             var result = await questionFlow.ExecuteAsync(QUESTIONFLOW_NAME, questionAnswers);
             output.WriteLine(result.Type.ToString());
-            Assert.True(result.Type == QuestionActionType.Continue);
+            Assert.True(result.Type == QuestionActionType.Next);
             Assert.Single(result.Actions.Select(action => action.FollowQuestionId == "8ef7396f-96bd-4a6a-b842-6f56af91fff9"));
         }
 
@@ -115,7 +115,7 @@ namespace WeData.QuestionFlow.Engine
         {
             var questionFlow = new QuestionFlowEngine();
 
-            string fileName = "QuestionFlow/questionRules.json";
+            string fileName = "QuestionFlow/QuestionFlow1.json";
             string jsonString = File.ReadAllText(fileName);
             questionFlow.AddQuestionFlow(jsonString);
 

@@ -4,6 +4,6 @@ public enum QuestionActionType
 {
     Success,
     Failure,
-    Continue,
+    Next,
     Stop
 }
